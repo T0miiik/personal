@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.omne-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.omne-container img {
+  width: 200px;
+  border-radius: 5%;
+  border: 3px solid #ddd;
+}
+
+.omne-container p {
+  max-width: 550px;
+  text-align: justify;
+}
+
+.projekty {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projekt {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.projekt:hover {
+  transform: scale(1.03);
+}
+
+.projekt h3 {
+  color: #ff6600;
+  margin-bottom: 5px;
+}
+
+#ukoly ul {
+  list-style: square;
+  max-width: 500px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.social {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.social a {
+  color: #ff6600;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .omne-container {
+    flex-direction: column;
+  }
+
+  .projekt {
+    width: 90%;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+}
